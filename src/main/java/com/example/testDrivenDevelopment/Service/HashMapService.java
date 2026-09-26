@@ -58,5 +58,7 @@ public class HashMapService {
         checkingInteger.put(891L,10); //put the new key back
 
         return checkingInteger;
+
+        /// This is too fun. I will never stop doing this - it feel like doing math and just getting rewarded each time I solve it.
     }
 }
