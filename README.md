@@ -21,7 +21,7 @@ for the specific scenario.
 --- 
 ### Data structures testing
   
-- [Tests](src/test/java/com/example/testDrivenDevelopment/HashMap/HashMapTest.java) -> you will find the tests here 
+- [Tests](src/test/java/com/example/testDrivenDevelopment) -> you will find the tests here 
 - [Service](src/main/java/com/example/testDrivenDevelopment/Service) -> the business-logic(service methods) for each data structure.
 
 #### Enjoy!
