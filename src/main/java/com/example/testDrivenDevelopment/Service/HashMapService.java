@@ -61,4 +61,55 @@ public class HashMapService {
 
         /// This is too fun. I will never stop doing this - it feel like doing math and just getting rewarded each time I solve it.
     }
+
+    //The idea is to have key value pair for hashmap, a scenario where i store the email that is key with the usernames
+    public Map<String,String> findOutEmailAndUsername() {
+        HashMap <String, String> emailAndUserName = new HashMap<>();
+
+        emailAndUserName.put("genti.rudi47@gmail.com", "genetiicz");
+        emailAndUserName.put("genti@gmail.com", "alo");
+        emailAndUserName.put("gentispill@gmail.com", "serious");
+        emailAndUserName.put("gentitest@gmail.com", "du");
+
+        emailAndUserName.remove("genti@gmail.com");
+        emailAndUserName.put("gentiagron123@gmail.com", "newValue");
+
+        if(emailAndUserName.containsValue("newValue")) {
+
+           String key = emailAndUserName.get("gentiagron123@gmail.com");
+
+            System.out.println("The key of this value is: " + key);
+        }
+
+        for (String i : emailAndUserName.keySet()){
+            System.out.println("email: " + i + " value: " +  emailAndUserName.get(i)); //this should return the HashMap and the new emailAndUserName
+        }
+
+        return emailAndUserName;
+    }
+
+    //Last test of HashMap
+    /**
+    *Write a method for words in a array that count how many times it appears.
+     */
+
+    public Map<String, Integer> countWords(String[] words){
+        HashMap <String,Integer> wordsAppear = new HashMap<>();
+        for (String appearance : words){
+            if (appearance == null){
+                continue;
+            }
+
+            wordsAppear.merge(appearance,1,Integer::sum); // so for EACH KEY that appear, if the key is the same we sum the value of the key by one on each iteration.
+
+            //if an apple shows up three times.
+            //apple = 1
+            //apple = 1+1 =2
+            //apple =2+1 =3.
+
+            System.out.println("word: " + appearance + " came up: " + wordsAppear.get(appearance));
+        }
+
+        return wordsAppear;
+    }
 }
