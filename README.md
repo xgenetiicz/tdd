@@ -1,4 +1,4 @@
-# Learning Data Structures Through TDD
+# Learning/Mastering Data Structures Through TDD
 
 There's a big difference between understanding the theory and actually having it in your
 fingers. I can always sketch out nested loops on a whiteboard, but this
